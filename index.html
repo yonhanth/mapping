@@ -55,11 +55,11 @@
     // 地図のロードが完了した後の処理
     map.on('load', function () {
         // 円の半径 (1000m)
-        const radiusInMeters = 1000;
+        const radiusInMeters = 500;
 
         // Turf.jsを使って円を作成
         const circleFeature = turf.circle(monzenNakachoCoordinates, radiusInMeters / 1000, {
-            steps: 64, // 円を滑らかにするステップ数
+            steps: 124, // 円を滑らかにするステップ数
             units: 'kilometers' // 単位 (km)
         });
 
